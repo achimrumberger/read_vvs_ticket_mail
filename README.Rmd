@@ -1,0 +1,46 @@
+---
+title: "Extract ticket price from VVS Emails "
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(stringr)
+source("processfile.R")
+source("findpattern.R")
+source("make_email_list.R")
+```
+
+## Introduction
+For the annual tax declaration, I wanted to find an automated way to find the total amount of money I have paid for online tickets. 
+The code below workks for Online tickets from Stuttgart and Munich.
+The mails were exported from my Mail-App.
+
+## Read Data
+```{r}
+filepath <- "ssb2018.mbox/mbox"
+rawtextlist <- processFile(filepath) 
+head(rawtextlist)
+```
+
+## Parse Data
+First we need to find thepoint were an email starts. 
+The ticket price will be present multiple times in the email, also VAT. We only need one value per mail.
+```{r}
+mailstart <- "From ticketshop@ssb-ag.de"
+#for the munich mvv it would be: "From ticketshop@mvv-muenchen.de"
+#convert the emails in a list of strings
+lll <-makeEmaiStringList(rawTextList = rawtextlist, starterStr = mailstart)
+head(lll)
+#find the values
+erg <- lapply(lll, findValueInList)
+
+```
+
+## Result
+And here it is:
+```{r}
+do.call(sum, erg)
+
+```
+
