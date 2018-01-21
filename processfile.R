@@ -12,28 +12,3 @@ processFile = function(filepath) {
   close(con)
   return(result)
 }
-
-conCatString = function(stringvec) {
-  
-  line <- c(NULL)
-  result <- c(NULL)
-
-  for(i in stringvec) {
-    
-    if(nchar(i)==0){
-        result <- c(result, line)
-        line <- c(NULL)
-    } else {
-      line <- paste(line, i)
-      }
-  }
-  
-  return(result)
-}
-
-
-html2txt <- function(str) {
-  xpathApply(htmlParse(str, asText=TRUE),
-             "//body//text()", 
-             xmlValue)[[1]] 
-}
