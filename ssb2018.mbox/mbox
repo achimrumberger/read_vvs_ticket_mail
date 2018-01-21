@@ -1,0 +1,250 @@
+From ticketshop@ssb-ag.de Mon Jan 08 06:09:06 2018
+Return-path: <ticketshop@mail.ssb-ag.de>
+Received: from mr28p00im-smtpin017.mac.com ([17.110.71.16])
+ by ms09531.mac.com (Oracle Communications Messaging Server 8.0.1.2.20170607
+ 64bit (built Jun  7 2017)) with ESMTP id <0P2800I7P0Z6XK00@ms09531.mac.com>
+ for john.doe@abc.com; Mon, 08 Jan 2018 05:09:06 +0000 (GMT)
+Original-recipient: rfc822;john.doe@abc.com
+Received: from dvm044.uptrade.de (dvm044.uptrade.de [185.5.24.44])
+ by mr28p00im-smtpin017.me.com
+ (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7
+ 2017)) with ESMTPS id <0P28004VP0Z3YS50@mr28p00im-smtpin017.me.com> for
+ john.doe@abc.com (ORCPT john.doe@abc.com); Mon,
+ 08 Jan 2018 05:09:06 +0000 (GMT)
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=115 suspectscore=2 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1707230000 definitions=main-1801080073
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2018-01-08_03:,, signatures=0
+Authentication-results: mr21p00im-dmarcmilter010.me.com; dmarc=none
+ header.from=ssb-ag.de
+Authentication-results: mr21p00im-spfmilter003.me.com; spf=none
+ (mr21p00im-spfmilter003.me.com: ticketshop@mail.ssb-ag.de does not designate
+ permitted sender hosts) smtp.mailfrom=ticketshop@mail.ssb-ag.de
+Received-SPF: none (mr21p00im-spfmilter003.me.com: ticketshop@mail.ssb-ag.de
+ does not designate permitted sender hosts)
+ receiver=mr21p00im-spfmilter003.me.com; client-ip=185.5.24.44;
+ helo=dvm044.uptrade.de; envelope-from=ticketshop@mail.ssb-ag.de
+Authentication-results: mr21p00im-dkimmilter005.me.com; dkim=none
+	reason="no signature"; dkim-adsp=none
+Received: by dvm044.uptrade.de (Postfix, from userid 48)	id F02351E404D; Mon,
+ 8 Jan 2018 06:09:02 +0100 (CET)
+To: John Doe <john.doe@abc.com>
+Subject: Ihr Kauf im SSB-Ticketshop, Auftragsnummer 2018010800801
+From: ticketshop@ssb-ag.de
+Reply-to: ticketshop@ssb-ag.de
+Cc:
+Date: Mon, 08 Jan 2018 06:09:02 +0100
+Content-type: text/plain; charset=utf-8
+Content-transfer-encoding: quoted-printable
+Content-disposition: inline
+MIME-version: 1.0
+Message-id: <20180108050902.F02351E404D@dvm044.uptrade.de>
+x-icloud-spam-score: 1111331
+ f=ssb-ag.de;e=mail.ssb-ag.de;is=yes;ir=no;spf=none;dkim=none;dmarc=noPolicy/noPolicy/none;gdwl=absent;pps=ham;clxs=ham;clxw=neutral
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: None
+X-CLX-Score: 115
+X-CLX-UShades: None
+X-CLX-Shades: None
+X-MANTSH: 1TEIXR1gYG1oaGkNHB0tNT0ReQ0QZGBoTEQpMQxcbHQQbGxsEGx0ZBBkYEBseGh8
+ aEQpMWRcbGx8RCllNF2RFRE8RCllJFxpxGhAadwYTH3EYHBAYdwYYGgYaEQpZXhdjbnkRCkNOF
+ 2JoE017Rkd5R2tAX31sbRNYUAVfAWNBZUNceWFkeVh+EQpYXBcZBBoEGRgHTRlOE08TGRgFGx0
+ EGxsbBBsfHwQYHhoQGx4aHxoRCl5ZF3hDYW1kEQpNXBceHxwRCkxaF21NTU0RCkNaFxsSHwQfB
+ BgeBB4eEQpCXhcbEQpCRRd6XGAFRntyRBJiZxEKQk4XbWtYelxjX2VcR0ERCkJMF3pcYAVGe3J
+ EEmJnEQpCbBd6XGAFRntyRBJiZxEKQkAXbX5gbGAFZx4ZBU0RCkJYF25mBXNIXF15eAVhEQpwa
+ BdvbG1GWUhBa24BTBAZGhEKcGgXektuGxsYG1thcBoQGRoRCnBoF2JhXxteR115SG9jEBoRCnB
+ oF2dJYnlyHwVncktCEBoRCnBoF3pGRlhtRFoFcm5eEBkaEQpwfxdkQ0dBbGBvYFMYfRAeEhEKc
+ F8XY05ISGFIG1wSf2YQHhIRCnB9F2FLG1ABfX1YG3huEBoRCm1+FxoRClhNF0sR
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+X-PHP-Originating-Script: 48:Sendmail.php
+
+=0A=0AGuten Tag Herr Dr. John Doe,=0A=0Avielen Dank f=C3=BCr Ihre=
+n Kauf folgender Artikel:=0A=0AEinzelTagesTicket=0AG=C3=BCltig ab: 08. J=
+anuar 2018 00:00 Uhr=0AG=C3=BCltig bis: 09. Januar 2018 06:59 Uhr=0AAnza=
+hl Zonen: Netz=0AArt: Mobiles Ticket=0APreis: 12,10=C2=A0EUR=0AMenge: 1=
+=0A=0AGesamtpreis: 12,10=C2=A0EUR=0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0AAbbuch=
+ungsbetrag: 12,10=C2=A0EUR=0A(inkl. 7 % MwSt.: 0,79=C2=A0EUR)=0A=0ADer B=
+etrag wird, wie vereinbart, von Ihrem angegebenen Zahlungsmittel (Visa-K=
+arte) abgebucht.=0A=0AHier k=C3=B6nnen Sie sich Ihren Einzelbeleg f=C3=
+=BCr diesen Kauf direkt downloaden:=0Ahttps://tickets.ssb-ag.de/index.ph=
+p/receipt/download/13391471/wenn9wrsbH/5a496c525bb55=0A=0A=0A=0ABei even=
+tuellen R=C3=BCckfragen beziehen Sie sich bitte auf die Auftragsnummer 2=
+018010800801.=0A=0AViele Gr=C3=BC=C3=9Fe und eine gute Fahrt!=0A=0AIhr S=
+SB-Ticketshop=0A=0APS: Kennen Sie schon die neue SSB Move App? Mit diese=
+r kommen Sie kinderleicht und noch einfacher zu Ihrem VVS-Ticket. Alle n=
+euen Funktionen und weitere Informationen erfahren Sie auf www.ssb-ag.de=
+/move. =0A=0AStuttgarter Stra=C3=9Fenbahnen AG =0APostfach 80 10 06 =0A7=
+0510 Stuttgart =0A=0AE-Mail: ticketshop@ssb-ag.de =0A=0A
+
+From ticketshop@ssb-ag.de Tue Jan 09 06:07:15 2018
+Return-path: <ticketshop@mail.ssb-ag.de>
+Received: from ms11p00im-qufv17084201.mac.com ([17.58.36.55])
+ by ms09531.mac.com
+ (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7
+ 2017)) with ESMTP id <0P29008RJVK3CFB0@ms09531.mac.com> for
+ john.doe@abc.com; Tue, 09 Jan 2018 05:07:15 +0000 (GMT)
+Original-recipient: rfc822;john.doe@abc.com
+Received: from dvm044.uptrade.de (dvm044.uptrade.de [185.5.24.44])
+ by ms11p00im-qufv17084201.me.com
+ (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7
+ 2017)) with ESMTPS id <0P290002VVJZCL30@ms11p00im-qufv17084201.me.com> for
+ john.doe@abc.com (ORCPT john.doe@abc.com); Tue,
+ 09 Jan 2018 05:07:15 +0000 (GMT)
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=172 suspectscore=2 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1707230000 definitions=main-1801090071
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2018-01-09_03:,, signatures=0
+Authentication-results: ms11p00im-qufv17233101.me.com; dmarc=none
+ header.from=ssb-ag.de
+Authentication-results: ms11p00im-qufv17234001.me.com; spf=none
+ (ms11p00im-qufv17234001.me.com: ticketshop@mail.ssb-ag.de does not designate
+ permitted sender hosts) smtp.mailfrom=ticketshop@mail.ssb-ag.de
+Received-SPF: none (ms11p00im-qufv17234001.me.com: ticketshop@mail.ssb-ag.de
+ does not designate permitted sender hosts)
+ receiver=ms11p00im-qufv17234001.me.com; client-ip=185.5.24.44;
+ helo=dvm044.uptrade.de; envelope-from=ticketshop@mail.ssb-ag.de
+Authentication-results: ms11p00im-qufv10113001.me.com; dkim=none
+	reason="no signature";	dkim-adsp=temperror
+ reason="AAAA query failed for 'ssb-ag.de'"
+Received: by dvm044.uptrade.de (Postfix, from userid 48)	id 41C8B1E4236; Tue,
+ 9 Jan 2018 06:07:11 +0100 (CET)
+To: John Doe <john.doe@abc.com>
+Subject: Ihr Kauf im SSB-Ticketshop, Auftragsnummer 2018010900450
+From: ticketshop@ssb-ag.de
+Reply-to: ticketshop@ssb-ag.de
+Cc:
+Date: Tue, 09 Jan 2018 06:07:11 +0100
+Content-type: text/plain; charset=utf-8
+Content-transfer-encoding: quoted-printable
+Content-disposition: inline
+MIME-version: 1.0
+Message-id: <20180109050711.41C8B1E4236@dvm044.uptrade.de>
+x-icloud-spam-score: 1111331
+ f=ssb-ag.de;e=mail.ssb-ag.de;is=yes;ir=no;spf=none;dkim=none;dmarc=noPolicy/noPolicy/none;gdwl=absent;pps=ham;clxs=ham;clxw=neutral
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: None
+X-CLX-Score: 172
+X-CLX-UShades: None
+X-CLX-Shades: None
+X-MANTSH: 1TEIXR1kbG1oaGkNHB1tfTFwbGhsbGxMaGxEKTEMXGxoEGxsYBBsbGgQeGRAbHho
+ fGhEKTFkXGx0YEQpZTRdkRURPEQpZSRcacRoQGncGGx8YcRwfEBt3BhgaBhoRClleF2NjeREKQ
+ 04XQl4YTQVYSBxjQBJuBRIbel8ZWGhfcHJbWW5sbFMTXhwRClhcFxkEGgQZGAdNGU4TTxMZGAU
+ bGgQTBBsEHR4QGx4aHxoRCl5ZF3hDTGFPEQpNXBcYGx0RCkxaF21NTU0RCkNaFxsSHwQfBBgeB
+ B4eEQpCXhcbEQpCRRd6XGAFRntyRBJiZxEKQk4XbWtYelxjX2VcR0ERCkJMF3pcYAVGe3JEEmJ
+ nEQpCbBd6XGAFRntyRBJiZxEKQkAXbX5gbGAFZx4ZBU0RCkJYF25mBXNIXF15eAVhEQpNXhcbE
+ QpwaBdvbG1GWUhBa24BTBAeEhEKcGgXektuGxsYG1thcBoQHhIRCnBoF2dJYnlyHwVncktCEBk
+ aEQpwaBd6RkZYbURaBXJuXhAZGhEKcGgXZWRnT28YWH4YHnAQGRoRCnB/F2RDR0FsYG9gUxh9E
+ B4SEQpwXxdjTkhIYUgbXBJ/ZhAeEhEKcH0XaFxlRh1yRxNQfEwQGRoRCm1+FxsRClhNF0sR
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+X-PHP-Originating-Script: 48:Sendmail.php
+
+=0A=0AGuten Tag Herr Dr. John Doe,=0A=0Avielen Dank f=C3=BCr Ihre=
+n Kauf folgender Artikel:=0A=0AEinzelTagesTicket=0AG=C3=BCltig ab: 09. J=
+anuar 2018 00:00 Uhr=0AG=C3=BCltig bis: 10. Januar 2018 06:59 Uhr=0AAnza=
+hl Zonen: Netz=0AArt: Mobiles Ticket=0APreis: 12,10=C2=A0EUR=0AMenge: 1=
+=0A=0AGesamtpreis: 12,10=C2=A0EUR=0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0AAbbuch=
+ungsbetrag: 12,10=C2=A0EUR=0A(inkl. 7 % MwSt.: 0,79=C2=A0EUR)=0A=0ADer B=
+etrag wird, wie vereinbart, von Ihrem angegebenen Zahlungsmittel (Visa-K=
+arte) abgebucht.=0A=0AHier k=C3=B6nnen Sie sich Ihren Einzelbeleg f=C3=
+=BCr diesen Kauf direkt downloaden:=0Ahttps://tickets.ssb-ag.de/index.ph=
+p/receipt/download/13407822/bIkAhregm5/5a496c525bb55=0A=0A=0A=0ABei even=
+tuellen R=C3=BCckfragen beziehen Sie sich bitte auf die Auftragsnummer 2=
+018010900450.=0A=0AViele Gr=C3=BC=C3=9Fe und eine gute Fahrt!=0A=0AIhr S=
+SB-Ticketshop=0A=0APS: Kennen Sie schon die neue SSB Move App? Mit diese=
+r kommen Sie kinderleicht und noch einfacher zu Ihrem VVS-Ticket. Alle n=
+euen Funktionen und weitere Informationen erfahren Sie auf www.ssb-ag.de=
+/move. =0A=0AStuttgarter Stra=C3=9Fenbahnen AG =0APostfach 80 10 06 =0A7=
+0510 Stuttgart =0A=0AE-Mail: ticketshop@ssb-ag.de =0A=0A
+
+From ticketshop@ssb-ag.de Wed Jan 10 06:07:00 2018
+Return-path: <ticketshop@mail.ssb-ag.de>
+Received: from pv33p00im-smtpin037.me.com ([17.142.180.63])
+ by ms09531.mac.com (Oracle Communications Messaging Server 8.0.1.2.20170607
+ 64bit (built Jun  7 2017)) with ESMTP id <0P2B004VEQ7OVS70@ms09531.mac.com>
+ for john.doe@abc.com; Wed, 10 Jan 2018 05:07:00 +0000 (GMT)
+Original-recipient: rfc822;john.doe@abc.com
+Received: from dvm044.uptrade.de (dvm044.uptrade.de [185.5.24.44])
+ by pv33p00im-smtpin037.me.com
+ (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7
+ 2017)) with ESMTPS id <0P2B00CEZQ7K3J30@pv33p00im-smtpin037.me.com> for
+ john.doe@abc.com (ORCPT john.doe@abc.com); Wed,
+ 10 Jan 2018 05:07:00 +0000 (GMT)
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0
+ clxscore=77 suspectscore=2 malwarescore=0 phishscore=0 adultscore=0
+ bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.0.1-1707230000 definitions=main-1801100070
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,,
+ definitions=2018-01-10_03:,, signatures=0
+Authentication-results: pv33p00im-dmarcmilter007.me.com; dmarc=none
+ header.from=ssb-ag.de
+Authentication-results: pv33p00im-spfmilter002.me.com; spf=none
+ (pv33p00im-spfmilter002.me.com: ticketshop@mail.ssb-ag.de does not designate
+ permitted sender hosts) smtp.mailfrom=ticketshop@mail.ssb-ag.de
+Received-SPF: none (pv33p00im-spfmilter002.me.com: ticketshop@mail.ssb-ag.de
+ does not designate permitted sender hosts)
+ receiver=pv33p00im-spfmilter002.me.com; client-ip=185.5.24.44;
+ helo=dvm044.uptrade.de; envelope-from=ticketshop@mail.ssb-ag.de
+Authentication-results: pv33p00im-dkimmilter002.me.com; dkim=none
+	reason="no signature"; dkim-adsp=none
+Received: by dvm044.uptrade.de (Postfix, from userid 48)	id 5BEBD1E41BE; Wed,
+ 10 Jan 2018 06:06:56 +0100 (CET)
+To: John Doe <john.doe@abc.com>
+Subject: Ihr Kauf im SSB-Ticketshop, Auftragsnummer 2018011000446
+From: ticketshop@ssb-ag.de
+Reply-to: ticketshop@ssb-ag.de
+Cc:
+Date: Wed, 10 Jan 2018 06:06:56 +0100
+Content-type: text/plain; charset=utf-8
+Content-transfer-encoding: quoted-printable
+Content-disposition: inline
+MIME-version: 1.0
+Message-id: <20180110050656.5BEBD1E41BE@dvm044.uptrade.de>
+x-icloud-spam-score: 1111331
+ f=ssb-ag.de;e=mail.ssb-ag.de;is=yes;ir=no;spf=none;dkim=none;dmarc=noPolicy/noPolicy/none;gdwl=absent;pps=ham;clxs=ham;clxw=neutral
+X-CLX-Spam: false
+X-CLX-UnSpecialScore: None
+X-CLX-Score: 77
+X-CLX-Shades: None
+X-MANTSH: 1TEIXWlwZHFoaGkNHB0tNT0ReQ0QeHBsfEQpMQxcbHQQbHhgEGxMfBBkYEBseGh8
+ aEQpMWRcdHREKWU0XZEVETxEKWUkXGnEaEBp3Bh8dcRMeEBgfdwYYGgYaEQpZXhdjbnkRCkNOF
+ 014G2FBcEYTaXpBbUxbUAFDQk8SfVtuTkZ8eVJARwFtEQpYXBcZBBoEGRgHTRlOE08TGRgFGx0
+ EGx4YBBsTEgQeGBAbHhofGhEKXlkXeEMae3oRCk1cFxscHhEKTFoXb21NTU0RCkNaFxsSHwQfB
+ BgeBB4eEQpCXhcbEQpCRRd6XGAFRntyRBJiZxEKQk4XbWtYelxjX2VcR0ERCkJMF3pcYAVGe3J
+ EEmJnEQpCbBd6XGAFRntyRBJiZxEKQkAXbX5gbGAFZx4ZBU0RCkJYF25mBXNIXF15eAVhEQpNX
+ hcbEQpwaBdvbG1GWUhBa24BTBAZGhEKcGgXektuGxsYG1thcBoQGRoRCnBoF2dJYnlyHwVnckt
+ CEBkaEQpwaBd6RkZYbURaBXJuXhAZGhEKcGgXZHJvek5ITGR6YX0QGRoRCnB/F2RDR0FsYG9gU
+ xh9EB4SEQpwXxdjTkhIYUgbXBJ/ZhAeEhEKcH0XY0ZcaHgZBWcaWkgQGRoRCm1+FxsRClhNF0s R
+x-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0
+x-dmarc-policy: none
+X-PHP-Originating-Script: 48:Sendmail.php
+
+=0A=0AGuten Tag Herr Dr. John Doe,=0A=0Avielen Dank f=C3=BCr Ihre=
+n Kauf folgender Artikel:=0A=0AEinzelTagesTicket=0AG=C3=BCltig ab: 10. J=
+anuar 2018 00:00 Uhr=0AG=C3=BCltig bis: 11. Januar 2018 06:59 Uhr=0AAnza=
+hl Zonen: Netz=0AArt: Mobiles Ticket=0APreis: 12,10=C2=A0EUR=0AMenge: 1=
+=0A=0AGesamtpreis: 12,10=C2=A0EUR=0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0AAbbuch=
+ungsbetrag: 12,10=C2=A0EUR=0A(inkl. 7 % MwSt.: 0,79=C2=A0EUR)=0A=0ADer B=
+etrag wird, wie vereinbart, von Ihrem angegebenen Zahlungsmittel (Visa-K=
+arte) abgebucht.=0A=0AHier k=C3=B6nnen Sie sich Ihren Einzelbeleg f=C3=
+=BCr diesen Kauf direkt downloaden:=0Ahttps://tickets.ssb-ag.de/index.ph=
+p/receipt/download/13422610/aOAsImnFOt/5a496c525bb55=0A=0A=0A=0ABei even=
+tuellen R=C3=BCckfragen beziehen Sie sich bitte auf die Auftragsnummer 2=
+018011000446.=0A=0AViele Gr=C3=BC=C3=9Fe und eine gute Fahrt!=0A=0AIhr S=
+SB-Ticketshop=0A=0APS: Kennen Sie schon die neue SSB Move App? Mit diese=
+r kommen Sie kinderleicht und noch einfacher zu Ihrem VVS-Ticket. Alle n=
+euen Funktionen und weitere Informationen erfahren Sie auf www.ssb-ag.de=
+/move. =0A=0AStuttgarter Stra=C3=9Fenbahnen AG =0APostfach 80 10 06 =0A7=
+0510 Stuttgart =0A=0AE-Mail: ticketshop@ssb-ag.de =0A=0A
+
