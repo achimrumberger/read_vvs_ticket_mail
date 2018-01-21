@@ -25,14 +25,14 @@ head(rawtextlist)
 Parse Data
 ----------
 
-First we need to find thepoint were an email starts. The ticket price will be present multiple times in the email, also VAT. We only need one value per mail.
+First we need to find thepoint were an email starts. Then we convert the emails in a list of strings. So every email is a one entry in a list. The ticket price will be present multiple times in the email, also VAT. We only need one value per mail.
 
 ``` r
-mailstart <- "From ticketshop@ssb-ag.de"
 #for the munich mvv it would be: "From ticketshop@mvv-muenchen.de"
-#convert the emails in a list of strings
-lll <-makeEmaiStringList(rawTextList = rawtextlist, starterStr = mailstart)
-head(lll)
+mailstart <- "From ticketshop@ssb-ag.de"
+
+emailStrinList <-makeEmaiStringList(rawTextList = rawtextlist, starterStr = mailstart)
+head(emailStrinList)
 ```
 
     ## [[1]]
@@ -47,12 +47,11 @@ head(lll)
     ## [[4]]
     ## [1] "Return-path: <ticketshop@mail.ssb-ag.de>Received: from pv33p00im-smtpin037.me.com ([17.142.180.63]) by ms09531.mac.com (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7 2017)) with ESMTP id <0P2B004VEQ7OVS70@ms09531.mac.com> for john.doe@abc.com; Wed, 10 Jan 2018 05:07:00 +0000 (GMT)Original-recipient: rfc822;john.doe@abc.comReceived: from dvm044.uptrade.de (dvm044.uptrade.de [185.5.24.44]) by pv33p00im-smtpin037.me.com (Oracle Communications Messaging Server 8.0.1.2.20170607 64bit (built Jun  7 2017)) with ESMTPS id <0P2B00CEZQ7K3J30@pv33p00im-smtpin037.me.com> for john.doe@abc.com (ORCPT john.doe@abc.com); Wed, 10 Jan 2018 05:07:00 +0000 (GMT)X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0 clxscore=77 suspectscore=2 malwarescore=0 phishscore=0 adultscore=0 bulkscore=0 classifier=spam adjust=0 reason=mlx scancount=1 engine=8.0.1-1707230000 definitions=main-1801100070X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10432:,, definitions=2018-01-10_03:,, signatures=0Authentication-results: pv33p00im-dmarcmilter007.me.com; dmarc=none header.from=ssb-ag.deAuthentication-results: pv33p00im-spfmilter002.me.com; spf=none (pv33p00im-spfmilter002.me.com: ticketshop@mail.ssb-ag.de does not designate permitted sender hosts) smtp.mailfrom=ticketshop@mail.ssb-ag.deReceived-SPF: none (pv33p00im-spfmilter002.me.com: ticketshop@mail.ssb-ag.de does not designate permitted sender hosts) receiver=pv33p00im-spfmilter002.me.com; client-ip=185.5.24.44; helo=dvm044.uptrade.de; envelope-from=ticketshop@mail.ssb-ag.deAuthentication-results: pv33p00im-dkimmilter002.me.com; dkim=none\treason=\"no signature\"; dkim-adsp=noneReceived: by dvm044.uptrade.de (Postfix, from userid 48)\tid 5BEBD1E41BE; Wed, 10 Jan 2018 06:06:56 +0100 (CET)To: John Doe <john.doe@abc.com>Subject: Ihr Kauf im SSB-Ticketshop, Auftragsnummer 2018011000446From: ticketshop@ssb-ag.deReply-to: ticketshop@ssb-ag.deCc:Date: Wed, 10 Jan 2018 06:06:56 +0100Content-type: text/plain; charset=utf-8Content-transfer-encoding: quoted-printableContent-disposition: inlineMIME-version: 1.0Message-id: <20180110050656.5BEBD1E41BE@dvm044.uptrade.de>x-icloud-spam-score: 1111331 f=ssb-ag.de;e=mail.ssb-ag.de;is=yes;ir=no;spf=none;dkim=none;dmarc=noPolicy/noPolicy/none;gdwl=absent;pps=ham;clxs=ham;clxw=neutralX-CLX-Spam: falseX-CLX-UnSpecialScore: NoneX-CLX-Score: 77X-CLX-Shades: NoneX-MANTSH: 1TEIXWlwZHFoaGkNHB0tNT0ReQ0QeHBsfEQpMQxcbHQQbHhgEGxMfBBkYEBseGh8 aEQpMWRcdHREKWU0XZEVETxEKWUkXGnEaEBp3Bh8dcRMeEBgfdwYYGgYaEQpZXhdjbnkRCkNOF 014G2FBcEYTaXpBbUxbUAFDQk8SfVtuTkZ8eVJARwFtEQpYXBcZBBoEGRgHTRlOE08TGRgFGx0 EGx4YBBsTEgQeGBAbHhofGhEKXlkXeEMae3oRCk1cFxscHhEKTFoXb21NTU0RCkNaFxsSHwQfB BgeBB4eEQpCXhcbEQpCRRd6XGAFRntyRBJiZxEKQk4XbWtYelxjX2VcR0ERCkJMF3pcYAVGe3J EEmJnEQpCbBd6XGAFRntyRBJiZxEKQkAXbX5gbGAFZx4ZBU0RCkJYF25mBXNIXF15eAVhEQpNX hcbEQpwaBdvbG1GWUhBa24BTBAZGhEKcGgXektuGxsYG1thcBoQGRoRCnBoF2dJYnlyHwVnckt CEBkaEQpwaBd6RkZYbURaBXJuXhAZGhEKcGgXZHJvek5ITGR6YX0QGRoRCnB/F2RDR0FsYG9gU xh9EB4SEQpwXxdjTkhIYUgbXBJ/ZhAeEhEKcH0XY0ZcaHgZBWcaWkgQGRoRCm1+FxsRClhNF0s Rx-dmarc-info: pass=none; dmarc-policy=(nopolicy); s=u0; d=u0x-dmarc-policy: noneX-PHP-Originating-Script: 48:Sendmail.php=0A=0AGuten Tag Herr Dr. John Doe,=0A=0Avielen Dank f=C3=BCr Ihre=n Kauf folgender Artikel:=0A=0AEinzelTagesTicket=0AG=C3=BCltig ab: 10. J=anuar 2018 00:00 Uhr=0AG=C3=BCltig bis: 11. Januar 2018 06:59 Uhr=0AAnza=hl Zonen: Netz=0AArt: Mobiles Ticket=0APreis: 12,10=C2=A0EUR=0AMenge: 1==0A=0AGesamtpreis: 12,10=C2=A0EUR=0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D==3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D==3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0AAbbuch=ungsbetrag: 12,10=C2=A0EUR=0A(inkl. 7 % MwSt.: 0,79=C2=A0EUR)=0A=0ADer B=etrag wird, wie vereinbart, von Ihrem angegebenen Zahlungsmittel (Visa-K=arte) abgebucht.=0A=0AHier k=C3=B6nnen Sie sich Ihren Einzelbeleg f=C3==BCr diesen Kauf direkt downloaden:=0Ahttps://tickets.ssb-ag.de/index.ph=p/receipt/download/13422610/aOAsImnFOt/5a496c525bb55=0A=0A=0A=0ABei even=tuellen R=C3=BCckfragen beziehen Sie sich bitte auf die Auftragsnummer 2=018011000446.=0A=0AViele Gr=C3=BC=C3=9Fe und eine gute Fahrt!=0A=0AIhr S=SB-Ticketshop=0A=0APS: Kennen Sie schon die neue SSB Move App? Mit diese=r kommen Sie kinderleicht und noch einfacher zu Ihrem VVS-Ticket. Alle n=euen Funktionen und weitere Informationen erfahren Sie auf www.ssb-ag.de=/move. =0A=0AStuttgarter Stra=C3=9Fenbahnen AG =0APostfach 80 10 06 =0A7=0510 Stuttgart =0A=0AE-Mail: ticketshop@ssb-ag.de =0A=0A"
 
-``` r
-#find the values
-erg <- lapply(lll, findValueInList)
-```
+### And now find the find the values
 
-    ## Warning in max(x): kein nicht-fehlendes Argument für max; gebe -Inf zurück
+``` r
+erg <- lapply(emailStrinList, findValueInList)
+```
 
 Result
 ------
